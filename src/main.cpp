@@ -2,8 +2,8 @@
 #include <string>
 #include <sstream>
 #include <windows.h>
-#include "include\LinkedList.h"
-#include "include\Turtle.h"
+#include "..\include\LinkedList.h"
+#include "..\include\Turtle.h"
 
 using namespace std;
 
