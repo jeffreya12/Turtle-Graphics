@@ -1,0 +1,44 @@
+# depslib dependency file v1.0
+1429938107 source:c:\users\jeffrey\dropbox\docs\proyectos\c++\turtle-graphics\main.cpp
+	<iostream>
+	<string>
+	<sstream>
+	<windows.h>
+	"include\LinkedList.h"
+	"include\Turtle.h"
+
+1429938289 c:\users\jeffrey\dropbox\docs\proyectos\c++\turtle-graphics\include\turtle.h
+	<iostream>
+	<fstream>
+	<winbgim.h>
+	<math.h>
+	<stdlib.h>
+	"LinkedList.h"
+
+1429213891 source:c:\users\user\desktop\turtle-graphics\main.cpp
+	<iostream>
+	"include\Turtle.h"
+
+1429227749 c:\users\user\desktop\turtle-graphics\include\turtle.h
+	<iostream>
+	<winbgim.h>
+	<math.h>
+
+1429244245 source:c:\users\jeffrey\documents\c++\turtle-graphics\main.cpp
+	<iostream>
+	"include\Turtle.h"
+
+1429244295 c:\users\jeffrey\documents\c++\turtle-graphics\include\turtle.h
+	<iostream>
+	<winbgim.h>
+	<math.h>
+
+1429908465 c:\users\jeffrey\dropbox\docs\proyectos\c++\turtle-graphics\include\linkedlist.h
+	<iostream>
+	<stdexcept>
+	"Node.h"
+
+1425763673 c:\users\jeffrey\dropbox\docs\proyectos\c++\turtle-graphics\include\node.h
+	<iostream>
+	<stdexcept>
+
