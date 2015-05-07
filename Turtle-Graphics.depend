@@ -7,7 +7,7 @@
 	"include\LinkedList.h"
 	"include\Turtle.h"
 
-1429938289 c:\users\jeffrey\dropbox\docs\proyectos\c++\turtle-graphics\include\turtle.h
+1430963795 c:\users\jeffrey\dropbox\docs\proyectos\c++\turtle-graphics\include\turtle.h
 	<iostream>
 	<fstream>
 	<winbgim.h>
@@ -33,12 +33,12 @@
 	<winbgim.h>
 	<math.h>
 
-1429908465 c:\users\jeffrey\dropbox\docs\proyectos\c++\turtle-graphics\include\linkedlist.h
+1430963626 c:\users\jeffrey\dropbox\docs\proyectos\c++\turtle-graphics\include\linkedlist.h
 	<iostream>
 	<stdexcept>
 	"Node.h"
 
-1425763673 c:\users\jeffrey\dropbox\docs\proyectos\c++\turtle-graphics\include\node.h
+1430963626 c:\users\jeffrey\dropbox\docs\proyectos\c++\turtle-graphics\include\node.h
 	<iostream>
 	<stdexcept>
 
@@ -66,4 +66,12 @@
 	<math.h>
 	<stdlib.h>
 	"LinkedList.h"
+
+1430963626 source:c:\users\jeffrey\dropbox\docs\proyectos\c++\turtle-graphics\src\main.cpp
+	<iostream>
+	<string>
+	<sstream>
+	<windows.h>
+	"..\include\LinkedList.h"
+	"..\include\Turtle.h"
 

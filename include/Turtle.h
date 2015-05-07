@@ -19,7 +19,7 @@ class Turtle{
         int currentY;
         int color;
         int penSize;
-        int heading;
+        double heading;
         bool penUp;
 
     public:
@@ -40,7 +40,7 @@ class Turtle{
 
             currentX = 600;
             currentY = 350;
-            heading = 0;
+            heading = 0.0;
             color = COLOR (255, 255, 255);;
             penSize = 1;
             penUp = false;
@@ -51,36 +51,36 @@ class Turtle{
 
         void tortuga(){ // Dibuja la tortuga
 
-            int centerX = currentX + 10 * cos(heading * PI / 180);
-            int centerY = currentY - 10 * sin(heading * PI / 180);
+            int centerX = currentX + 10 * cos(heading * PI / 180.0);
+            int centerY = currentY - 10 * sin(heading * PI / 180.0);
             int nextX, nextY;
 
             setlinestyle(0, 0, 1);
             setfillstyle(1, 2);
             setcolor(2);
 
-            nextX = centerX + 10 * cos((heading + 60) * PI / 180);
-            nextY = centerY - 10 * sin((heading + 60) * PI / 180);
+            nextX = centerX + 10 * cos((heading + 60) * PI / 180.0);
+            nextY = centerY - 10 * sin((heading + 60) * PI / 180.0);
 
             fillellipse(nextX, nextY, 4, 4); // Pata delantera izquierda
 
-            nextX = centerX + 10 * cos((heading - 60) * PI / 180);
-            nextY = centerY - 10 * sin((heading - 60) * PI / 180);
+            nextX = centerX + 10 * cos((heading - 60) * PI / 180.0);
+            nextY = centerY - 10 * sin((heading - 60) * PI / 180.0);
 
             fillellipse(nextX, nextY, 4, 4); // Pata delantera derecha
 
-            nextX = centerX + 10 * cos((heading + 120) * PI / 180);
-            nextY = centerY - 10 * sin((heading + 120) * PI / 180);
+            nextX = centerX + 10 * cos((heading + 120) * PI / 180.0);
+            nextY = centerY - 10 * sin((heading + 120) * PI / 180.0);
 
             fillellipse(nextX, nextY, 4, 4); // Pata trasera izquierda
 
-            nextX = centerX + 10 * cos((heading - 120) * PI / 180);
-            nextY = centerY - 10 * sin((heading - 120) * PI / 180);
+            nextX = centerX + 10 * cos((heading - 120) * PI / 180.0);
+            nextY = centerY - 10 * sin((heading - 120) * PI / 180.0);
 
             fillellipse(nextX, nextY, 4, 4); // Pata trasera derecha
 
-            nextX = centerX + 15 * cos(heading * PI / 180);
-            nextY = centerY - 15 * sin(heading * PI / 180);
+            nextX = centerX + 15 * cos(heading * PI / 180.0);
+            nextY = centerY - 15 * sin(heading * PI / 180.0);
 
             fillellipse(nextX, nextY, 5, 5);
 
@@ -95,8 +95,8 @@ class Turtle{
 
         void forward (int largoDeLinea){ // Mueve la tortuga en la direccion actual a la distancia indicada.
 
-            int nextX = currentX + largoDeLinea * cos(heading * PI / 180);
-            int nextY = currentY - largoDeLinea * sin(heading * PI / 180);
+            int nextX = currentX + largoDeLinea * cos(heading * PI / 180.0);
+            int nextY = currentY - largoDeLinea * sin(heading * PI / 180.0);
 
             if (!penUp){ //Dibuja si el lapiz esta abajo
                 line(currentX, currentY, nextX, nextY);
@@ -108,8 +108,8 @@ class Turtle{
 
         void back (int largoDeLinea){ // Mueve la tortuga en la direccion contraria a la distancia indicada.
 
-            int nextX = currentX - largoDeLinea * cos(heading * PI / 180);
-            int nextY = currentY + largoDeLinea * sin(heading * PI / 180);
+            int nextX = currentX - largoDeLinea * cos(heading * PI / 180.0);
+            int nextY = currentY + largoDeLinea * sin(heading * PI / 180.0);
 
             if (!penUp){ //Dibuja si el lapiz esta abajo
                 line(currentX, currentY, nextX, nextY);
@@ -180,8 +180,8 @@ class Turtle{
                 radio = abs(pRadio);
                 if (pRadio < 0) right(90);
                 if (pRadio > 0) left(90);
-                nextX = currentX + radio * cos(heading * PI / 180);
-                nextY = currentY - radio * sin(heading * PI / 180);
+                nextX = currentX + radio * cos(heading * PI / 180.0);
+                nextY = currentY - radio * sin(heading * PI / 180.0);
                 circle(nextX, nextY, radio);
                 heading = headingTemp;
             }
